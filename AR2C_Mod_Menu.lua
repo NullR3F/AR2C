@@ -1065,12 +1065,12 @@ TpZombies.TextSize = 10.000
         local localCharacter = game.Players.LocalPlayer.Character
         if not localCharacter then return nil end
     
-        local ignorelist = getfriendly()  -- Assuming getfriendly() returns a list of friendly player instances
+        local ignorelist = {}
     
         local screenCenter = Vector2.new(game.Workspace.CurrentCamera.ViewportSize.X / 2, game.Workspace.CurrentCamera.ViewportSize.Y / 2)
     
         for _, player in pairs(game.Players:GetPlayers()) do
-            if player ~= game.Players.LocalPlayer and player.Character and player.Character:FindFirstChild("Head") and not table.find(ignorelist, player) and not table.find(wl,player.Name) then
+            if player ~= game.Players.LocalPlayer and player.Character and player.Character:FindFirstChild("Head") then
                 local head = player.Character.Head
                 local headPosition, onScreen = game.Workspace.CurrentCamera:WorldToViewportPoint(head.Position)
     
