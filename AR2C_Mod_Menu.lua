@@ -1402,10 +1402,6 @@ TpZombies.TextSize = 10.000
             while true do
                 pcall(function()
                     local contextual = ""
-                    if #wl>=1 and table.find(wl,head.Name) then
-                        contextual = ">> FRIENDLY: AR2C Premium+ User <<\n"
-                        textLabel.TextColor3 = Color3.new(0.4,0.4,1)
-                    end
                     local player = game.Players.LocalPlayer
                     
     
