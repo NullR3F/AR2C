@@ -510,7 +510,7 @@ TpZombies.TextSize = 10.000
     Title.BorderSizePixel = 0
     Title.Size = UDim2.new(0, 500, 0, 30)
     Title.Font = Enum.Font.Bangers
-    Title.Text = "AR2C Mod Menu (Pro)"
+    Title.Text = "AR2C (Louve's Official Leak)"
     Title.TextColor3 = Color3.fromRGB(255, 255, 255)
     Title.TextSize = 20.000
     
